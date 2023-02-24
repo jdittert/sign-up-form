@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+}
+
+.bg-image {
+    width: 576px;
+    background-color: darkgreen;
+    position: relative;
+}
+
+.form-container {
+    width: 864px;
+    background-color: gainsboro;
+    display: flex;            
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.form-fields {    
+    background-color: white;       
+}
+
+.under-text {
+    background-color: black;
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: .5rem;
+    top: 20%;
+}
+
+.brand {
+    color: white;
+    font-size: 48px;
+    opacity: 1.0;
+}
+
