@@ -112,16 +112,17 @@ input {
     border-color: #E5E7EB;
 }
 
-:focus {
-    border-color: blue;
-    border-style: solid;
-    box-shadow: 2px 2px 2px lightgray;
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 2px 2px 2px cornflowerblue;
 }
 
-input:focus {
-    border-color: blue;
-    border-style: solid;
-    box-shadow: 2px 2px 2px lightgray;
+input[type="password"]:focus {
+    outline: none;
+    border: 3px solid red;
+    box-shadow: 2px 2px 2px lightcoral;
 }
 
 button {
@@ -132,6 +133,17 @@ button {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+}
+
+.password-error {
+    font-size: small;
+    color: red;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.error {
+    border: 2px solid red;
 }
 
 a {
