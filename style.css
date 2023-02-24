@@ -1,3 +1,6 @@
+:root {
+    --accent-color: lightblue;
+}
 body {
     display: flex;
     margin: auto;
@@ -15,24 +18,38 @@ body {
 
 .form-container {
     width: 864px;
-    background-color: gainsboro;
+    background-color: whitesmoke;
     display: flex;            
     flex-direction: column;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .content {
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto;    
+}
+
+.content > div {
+    padding-left: 2rem;
+    padding-right: 6rem;    
+}
+
+.content div {
+    margin-bottom: 1rem;
 }
 
 .form-fields {    
-    background-color: white;       
+    background-color: white;      
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+    box-shadow: 0px 4px 2px lightgray;
 }
 
 .under-text {
-    background-color: black;
-    opacity: 0.4;
+    background-color: rgb(0, 0, 0, .3);    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +60,49 @@ body {
 
 .brand {
     color: white;
-    font-size: 48px;
-    opacity: 1.0;
+    font-size: 48px;    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {    
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin-top: .5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+:focus {
+    border-color: blue;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+button {
+    padding: 8px 24px;
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    border-style: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
