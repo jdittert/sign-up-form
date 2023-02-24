@@ -1,6 +1,7 @@
 :root {
     --accent-color: lightblue;
 }
+
 body {
     display: flex;
     margin: auto;
@@ -12,8 +13,20 @@ body {
 
 .bg-image {
     width: 576px;
-    background-color: darkgreen;
+    height: auto;
+    background-image: url(images/plants.jpg);
+    background-size: cover;
+    background-color: var(--accent-color);    
     position: relative;
+    color: white;
+    text-align: center;
+}
+
+.photo-credit {
+    position: absolute;    
+    bottom: 0;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 .form-container {
@@ -102,6 +115,10 @@ button {
 }
 
 a {
+    color: white
+}
+
+a.fake {
     color: var(--accent-color);
     text-decoration: none;
 }
