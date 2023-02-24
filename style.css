@@ -29,6 +29,11 @@ body {
     width: 100%;
 }
 
+@font-face {
+    font-family: f;
+    src: url(Norse-Bold.otf);
+}
+
 .form-container {
     width: 864px;
     background-color: whitesmoke;
@@ -71,9 +76,15 @@ body {
     top: 20%;
 }
 
+.logo {
+    height: 96px;
+    width: auto;
+}
+
 .brand {
     color: white;
-    font-size: 48px;    
+    font-size: 64px;   
+    font-family: f, Arial, Helvetica, sans-serif; 
 }
 
 ul {
