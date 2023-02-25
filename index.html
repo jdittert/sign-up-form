@@ -31,11 +31,11 @@
                         <ul>
                             <li>
                                 <label for="firstname">First name</label>
-                                <input type="text" name="firstname" id="firstname">
+                                <input type="text" name="firstname" id="firstname" pattern="^[A-Za-z]{1,}$" title="Letters only.">
                             </li>
                             <li>
                                 <label for="lastname">Last Name</label>
-                                <input type="text" name="lastname" id="lastname">
+                                <input type="text" name="lastname" id="lastname" pattern="^[A-Za-z]{1,}$" title="Letters only.">
                             </li>
                             <li>
                                 <label for="email">Email</label>
@@ -43,16 +43,17 @@
                             </li>
                             <li>
                                 <label for="phonenumber">Phone Number</label>
-                                <input type="text" name="phonenumber" id="phonenumber" pattern="^((\d{3})|(\(\d{3}\)))-(\d{3})-(\d{4})$" placeholder="123-456-7890">
+                                <input type="text" name="phonenumber" id="phonenumber" pattern="^((\d{3})|(\(\d{3}\)))-(\d{3})-(\d{4})$" placeholder="123-456-7890"
+                                title="Please enter (123)-456-7890 or 123-456-7890.">
                             </li>
                             <li>
                                 <label for="password">Password</label>
-                                <input type="password" name="password" id="password" class="error">
+                                <input type="password" name="password" id="password" class="error" pattern="^\w{8,32}$" title="Password must be between 8 and 32 characters.">
                                 <div class="password-error">*Passwords do not match.</div>
                             </li>
                             <li>
                                 <label for="confirm">Confirm Password</label>
-                                <input type="password" name="confirm" id="confirm" class="error">
+                                <input type="password" name="confirm" id="confirm" class="error" pattern="^\w{8,32}$" title="Password must be between 8 and 32 characters.">
                             </li>
                         </ul>
                     </form>

@@ -110,6 +110,7 @@ input {
     border-style: solid;
     border-radius: 4px;
     border-color: #E5E7EB;
+    padding-left: 4px;
 }
 
 input[type="text"]:focus,
@@ -127,6 +128,12 @@ input[type="password"]:focus {
 
 input:invalid {
     border-color: red;
+    box-shadow: 2px 2px 2px lightcoral;
+}
+
+input:invalid:focus {
+    border-color: red;
+    box-shadow: 2px 2px 2px lightcoral;
 }
 
 button {
