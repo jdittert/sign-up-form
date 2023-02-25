@@ -125,6 +125,10 @@ input[type="password"]:focus {
     box-shadow: 2px 2px 2px lightcoral;
 }
 
+input:invalid {
+    border-color: red;
+}
+
 button {
     padding: 8px 24px;
     background-color: var(--accent-color);
